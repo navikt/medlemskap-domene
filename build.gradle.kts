@@ -41,8 +41,8 @@ publishing {
                 name.set("medlemskap-domene")
                 description.set("Felles domeneobjekter for medlemskap")
                 url.set("https://github.com/navikt/medlemskap-domene")
-                groupId = "no.nav.btn"
-                artifactId = "btn-common"
+                groupId = "no.nav.medlemskap"
+                artifactId = "medlemskap-domene"
                 licenses {
                     license {
                         name.set("MIT License")
