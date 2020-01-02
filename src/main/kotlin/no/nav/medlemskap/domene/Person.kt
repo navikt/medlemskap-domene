@@ -1,5 +1,6 @@
 package no.nav.medlemskap.domene
 
+import java.time.LocalDate
 import java.util.*
 
 data class Personhistorikk(
@@ -12,19 +13,19 @@ data class Personhistorikk(
 
 data class Statsborgerskap(
         val landkode: String,
-        val fom: Date?,
-        val tom: Date?
+        val fom: LocalDate?,
+        val tom: LocalDate?
 )
 
 data class Personstatus(
         val personstatus: String,
-        val fom: Date?,
-        val tom: Date?
+        val fom: LocalDate?,
+        val tom: LocalDate?
 )
 
 data class Adresse(
         val adresselinje: String,
         val landkode: String,
-        val fom: Date?,
-        val tom: Date?
+        val fom: LocalDate?,
+        val tom: LocalDate?
 )
