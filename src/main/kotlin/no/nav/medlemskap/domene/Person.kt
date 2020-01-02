@@ -7,7 +7,7 @@ data class Personhistorikk(
         val personstatuser: List<Personstatus>,
         val bostedsadresser: List<Adresse>,
         val postadresser: List<Adresse>,
-        val midlertidigAdresser: List<MidlertidigAdresse>
+        val midlertidigAdresser: List<Adresse>
 )
 
 data class Statsborgerskap(
@@ -25,13 +25,6 @@ data class Personstatus(
 data class Adresse(
         val adresselinje: String,
         val landkode: String,
-        val endringstidspunkt: Date?,
         val fom: Date?,
         val tom: Date?
-)
-
-data class MidlertidigAdresse(
-        val adresse: Adresse,
-        val gyldigFom: Date?,
-        val gyldigTom: Date?
 )
