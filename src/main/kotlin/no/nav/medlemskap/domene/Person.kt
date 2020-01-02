@@ -2,7 +2,7 @@ package no.nav.medlemskap.domene
 
 import java.util.*
 
-data class Person(
+data class Personhistorikk(
         val statsborgerskap: List<Statsborgerskap>,
         val personstatuser: List<Personstatus>,
         val bostedsadresser: List<Adresse>,
