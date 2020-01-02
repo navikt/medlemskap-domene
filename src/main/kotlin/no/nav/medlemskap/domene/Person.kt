@@ -25,11 +25,11 @@ data class Personstatus(
 data class Adresse(
         val adresselinje: String,
         val landkode: String,
-        val endringstidspunkt: Date
+        val endringstidspunkt: Date?
 )
 
 data class MidlertidigAdresse(
         val adresse: Adresse,
-        val gyldigFom: Date,
+        val gyldigFom: Date?,
         val gyldigTom: Date?
 )
