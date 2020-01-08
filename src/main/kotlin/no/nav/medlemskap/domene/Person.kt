@@ -1,7 +1,17 @@
 package no.nav.medlemskap.domene
 
 import java.time.LocalDate
-import java.util.*
+
+data class Regelavklaring(
+        val soknadsperiode: Periode,
+        val sokadstidspunkt: LocalDate,
+        val personhistorikk: Personhistorikk
+)
+
+data class Periode(
+        val fom: LocalDate,
+        val tom: LocalDate
+)
 
 data class Personhistorikk(
         val statsborgerskap: List<Statsborgerskap>,
