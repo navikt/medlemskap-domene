@@ -4,7 +4,7 @@ import java.time.LocalDate
 
 data class Regelavklaring(
         val soknadsperiode: Periode,
-        val sokadstidspunkt: LocalDate,
+        val soknadstidspunkt: LocalDate,
         val personhistorikk: Personhistorikk
 )
 
