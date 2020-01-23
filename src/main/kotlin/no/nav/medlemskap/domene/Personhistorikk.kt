@@ -2,17 +2,6 @@ package no.nav.medlemskap.domene
 
 import java.time.LocalDate
 
-data class Regelavklaring(
-        val soknadsperiode: Periode,
-        val soknadstidspunkt: LocalDate,
-        val personhistorikk: Personhistorikk
-)
-
-data class Periode(
-        val fom: LocalDate,
-        val tom: LocalDate
-)
-
 data class Personhistorikk(
         val statsborgerskap: List<Statsborgerskap>,
         val personstatuser: List<Personstatus>,
