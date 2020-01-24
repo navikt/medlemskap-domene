@@ -6,9 +6,11 @@ data class Datagrunnlag (
         val soknadsperiode: Periode,
         val soknadstidspunkt: LocalDate,
         val personhistorikk: Personhistorikk,
-        val medlemskapsunntak: List<Medlemskapsunntak>?,
-        val arbeidsforhold: List<Arbeidsforhold>?,
-        val inntekt: List<Inntekt>?
+        val medlemskapsunntak: List<Medlemskapsunntak> = listOf(),
+        val arbeidsforhold: List<Arbeidsforhold> = listOf(),
+        val inntekt: List<Inntekt> = listOf(),
+        val oppgaver: List<Oppgave> = listOf(),
+        val dokument: List<Journalpost> = listOf()
 )
 
 data class Periode (
