@@ -5,6 +5,7 @@ import java.time.LocalDate
 data class Datagrunnlag (
         val soknadsperiode: Periode,
         val soknadstidspunkt: LocalDate,
+        val brukerinput: Brukerinput,
         val personhistorikk: Personhistorikk,
         val medlemskapsunntak: List<Medlemskapsunntak> = listOf(),
         val arbeidsforhold: List<Arbeidsforhold> = listOf(),
