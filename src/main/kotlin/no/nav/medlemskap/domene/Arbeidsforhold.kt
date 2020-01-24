@@ -12,7 +12,7 @@ data class Arbeidsforhold (
 data class Arbeidsavtale (
         val periode: Periode,
         val yrkeskode: String,
-        val skipsregister: String?,
+        val skipsregister: Skipsregister?,
         val stillingsprosent: Double?
 )
 
@@ -34,4 +34,10 @@ enum class Arbeidsforholdstype (val navn: String) {
     NORMALT("ordinaertArbeidsforhold"),
     FORENKLET("forenkletOppgjoersordning"),
     ANDRE("pensjonOgAndreTyperYtelserUtenAnsettelsesforhold")
+}
+
+enum class Skipsregister (val beskrivelse: String) {
+    nis("Norsk InternasjonaltSkipsregister"),
+    nor("Norsk Ordinært Skipsregister"),
+    utl("Utenlandsk skipsregister")
 }
