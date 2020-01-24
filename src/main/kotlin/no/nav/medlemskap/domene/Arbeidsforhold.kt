@@ -5,7 +5,15 @@ import java.time.YearMonth
 data class Arbeidsforhold (
         val periode: Periode,
         val utenlandsopphold: List<Utenlandsopphold>,
-        val arbeidsgiver: Arbeidsgiver
+        val arbeidsgiver: Arbeidsgiver,
+        val arbeidsfolholdstype: Arbeidsforholdstype
+)
+
+data class Arbeidsavtale (
+        val periode: Periode,
+        val yrkeskode: String,
+        val skipsregister: String?,
+        val stillingsprosent: Double?
 )
 
 data class Arbeidsgiver (
@@ -19,3 +27,11 @@ data class Utenlandsopphold (
         val periode: Periode?,
         val rapporteringsperiode: YearMonth
 )
+
+enum class Arbeidsforholdstype (val navn: String) {
+    FRILANSER("frilanserOppdragstakerHonorarPersonerMm"),
+    MARITIM("maritimtArbeidsforhold"),
+    NORMALT("ordinaertArbeidsforhold"),
+    FORENKLET("forenkletOppgjoersordning"),
+    ANDRE("pensjonOgAndreTyperYtelserUtenAnsettelsesforhold")
+}
