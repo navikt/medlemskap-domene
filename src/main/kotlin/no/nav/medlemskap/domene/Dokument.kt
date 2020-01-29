@@ -6,7 +6,7 @@ data class Journalpost (
         val journalposttype: String,
         val journalstatus: String,
         val tema: String,
-        val dokumenter: List<Dokument>
+        val dokumenter: List<Dokument>?
 )
 
 data class Dokument (
