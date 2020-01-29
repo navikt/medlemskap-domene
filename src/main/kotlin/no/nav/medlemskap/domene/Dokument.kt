@@ -11,5 +11,5 @@ data class Journalpost (
 
 data class Dokument (
         val dokumentId: String,
-        val tittel: String
+        val tittel: String?
 )
